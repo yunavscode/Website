@@ -1,4 +1,5 @@
 
+/*lettertype*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 * {
@@ -6,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-
+/*Inhoud*/
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -17,8 +18,7 @@ body {
     color: #160c1c;
 }
 
-/* Navigatie */
-
+/*navigatie menu*/
 nav {
     position: fixed;
     top: 20px;
@@ -45,7 +45,7 @@ nav a {
     white-space: nowrap;
     transition: all 0.3s ease;
 }
-
+/*hoover knop */
 nav a:hover {
     transform: translateY(-3px);
     background-color: #8d36c9;
@@ -59,9 +59,7 @@ nav a:hover {
         0 0 8px #c04dff,
         0 0 20px #9b00ff;
 }
-
-/* Afbeeldingen */
-
+/*afbeeldingen*/
 .img-hand,
 .img-head {
     position: fixed;
@@ -81,7 +79,7 @@ nav a:hover {
     bottom: 0;
     width: 420px;
 }
-
+/*animaties rond afbeeldingen*/
 @keyframes neonPulse {
     from {
         filter:
@@ -96,8 +94,7 @@ nav a:hover {
     }
 }
 
-/* Inhoud */
-
+/*hoofd inhoud*/
 main {
     position: relative;
     z-index: 10;
@@ -108,7 +105,7 @@ main {
     min-height: 100vh;
     padding: 90px 20px 30px;
 }
-
+/*tekstblok*/
 article {
     width: 570px;
     max-width: 85vw;
@@ -132,6 +129,7 @@ article:hover {
         0 0 35px rgba(160, 32, 240, 0.12),
         inset 0 0 14px rgba(255, 255, 255, 0.1);
 }
+/*tekst van de kopjes*/
 h1,
 h2 {
     color: #fff0ff;
@@ -178,14 +176,12 @@ article h2 {
     box-shadow: none !important;
 }
 
-/* Bronnenpagina */
+/*bron*/
 
 .sources a {
     color: #e2afff;
 }
-
-/* Kleine schermen */
-
+/*layout voor kleine schermen*/
 @media (max-width: 700px) {
     nav {
         top: 12px;
@@ -224,16 +220,8 @@ article h2 {
         padding: 24px;
     }
 }
-@keyframes ambientGlow {
-    from {
-        background-position: 0% 50%, 100% 50%, center;
-    }
 
-    to {
-        background-position: 100% 50%, 0% 50%, center;
-    }
-}
-
+/*voor gebruikers die minder animatie willen*/
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -325,4 +313,5 @@ article:hover {
         translate: none;
     }
 }
+
 
